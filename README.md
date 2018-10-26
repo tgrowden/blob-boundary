@@ -22,5 +22,6 @@ The raw input:
 ---
 ## Running
 * `$ git clone https://github.com/tgrowden/blob-boundary.git`
+* `$ cd blob-boundary`
 * `$ yarn`
 * `$ yarn start`
