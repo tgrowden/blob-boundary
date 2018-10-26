@@ -18,10 +18,10 @@ export default class BlobBoundaryFinder {
 	}
 
 	public find() {
-		this.findTop()
-		this.findRight()
 		this.findLeft()
 		this.findBottom()
+		this.findRight()
+		this.findTop()
 
 		return {
 			top: this.top,
