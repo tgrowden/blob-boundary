@@ -1,4 +1,4 @@
-export const SampleCoordinateSpace: CoordinateSpace = [
+export const SampleGrid: Grid = [
 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 	[ 0, 0, 1, 1, 1, 0, 0, 0, 0, 0 ],
 	[ 0, 0, 1, 1, 1, 1, 1, 0, 0, 0 ],
@@ -11,19 +11,30 @@ export const SampleCoordinateSpace: CoordinateSpace = [
 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 ]
 
-export type Blob = 0 | 1
+export type CoordinateSpace = 0 | 1
 
-export type BlobRow = [ Blob, Blob, Blob, Blob, Blob, Blob, Blob, Blob, Blob, Blob ]
+export type CoordinateSpaceRow = [
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace,
+	CoordinateSpace
+]
 
-export type CoordinateSpace = [
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow,
-	BlobRow
+export type Grid = [
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow,
+	CoordinateSpaceRow
 ]
