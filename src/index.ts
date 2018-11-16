@@ -1,7 +1,7 @@
-import { SampleCoordinateSpace } from './blob'
+import { SampleGrid } from './blob'
 import BlobBoundaryFinder from './blob-boundary-finder'
 
-const finder = new BlobBoundaryFinder(SampleCoordinateSpace)
+const finder = new BlobBoundaryFinder(SampleGrid)
 
 const { reads, top, left, bottom, right } = finder.find()
 

@@ -1,4 +1,4 @@
-import { CoordinateSpace } from './blob'
+import { Grid } from './blob'
 
 export default class BlobBoundaryFinder {
 	public top: number = 0
@@ -11,10 +11,10 @@ export default class BlobBoundaryFinder {
 
 	public reads: number = 0
 
-	private blobs: CoordinateSpace
+	private grid: Grid
 
-	constructor(blobs: CoordinateSpace) {
-		this.blobs = blobs
+	constructor(grid: Grid) {
+		this.grid = grid
 	}
 
 	public find() {
@@ -33,7 +33,7 @@ export default class BlobBoundaryFinder {
 	}
 
 	private getBlobByCoords(i: number, j: number): number {
-		const res = this.blobs[i][j]
+		const res = this.grid[i][j]
 		this.reads += 1
 
 		return res
