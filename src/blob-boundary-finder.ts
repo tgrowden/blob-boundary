@@ -33,7 +33,11 @@ export default class BlobBoundaryFinder {
 	}
 
 	private getBlobByCoords(i: number, j: number): number {
-		const res = this.grid[i][j]
+		let res = 0
+
+		if (i < 0 || j < 0) return res
+
+		res = this.grid[i][j]
 		this.reads += 1
 
 		return res
